@@ -172,6 +172,11 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
 .stat-num small { font-size: 1rem; font-weight: 500; margin-left: 2px; }
 .stat-label { font-size: 0.85rem; color: rgba(33,29,23,0.6); text-transform: uppercase; letter-spacing: 0.06em; }
 
+/* Views & Wildlife */
+.views { background: var(--sand-deep); }
+.views-inner { max-width: 760px; }
+.views-inner p { font-size: 1.05rem; color: rgba(33,29,23,0.85); }
+
 /* Gallery */
 .gallery { background: var(--cream); }
 .gallery-grid {
