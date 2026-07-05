@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f4a3a"/>
+      <stop offset="100%" stop-color="#211d17"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <text x="800" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#f4efe6" opacity="0.85">Mziki Wilderness Oasis</text>
+  <text x="800" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="2" fill="#e8dfcd" opacity="0.6">PHINDA PRIVATE GAME RESERVE</text>
+</svg>
