@@ -321,10 +321,11 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
   .hero-content { padding-top: 130px; }
 }
 @media (max-width: 560px) {
-  .wrap { padding: 0 20px; }
+  .wrap { padding-left: 20px; padding-right: 20px; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .amenities-grid { grid-template-columns: 1fr; }
   .intro-stats { grid-template-columns: 1fr 1fr; padding: 24px; }
   .ownership-row { flex-direction: column; gap: 4px; }
   .contact-card { padding: 22px 26px; }
+  .hero-ctas { margin-bottom: 24px; }
 }
