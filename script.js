@@ -11,4 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   window.addEventListener("scroll", onScroll);
   onScroll();
+
+  const heroVideo = document.querySelector(".hero-video");
+  if (heroVideo) {
+    const introEnd = 7;
+    heroVideo.addEventListener("loadedmetadata", () => {
+      heroVideo.currentTime = introEnd;
+    });
+    heroVideo.addEventListener("timeupdate", () => {
+      if (heroVideo.currentTime >= heroVideo.duration - 0.2) {
+        heroVideo.currentTime = introEnd;
+        heroVideo.play();
+      }
+    });
+  }
 });
