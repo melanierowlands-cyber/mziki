@@ -293,6 +293,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
 /* Enquire */
 .enquire { background: var(--sand-deep); text-align: center; }
 .enquire-inner { display: flex; flex-direction: column; align-items: center; }
+.enquire-inner .hero-ctas { justify-content: center; }
 .enquire .section-lede { margin-left: auto; margin-right: auto; }
 .contact-card {
   display: flex;
