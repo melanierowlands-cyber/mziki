@@ -213,6 +213,13 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
   letter-spacing: 0.08em;
   color: rgba(255,255,255,0.7);
 }
+.gallery-tile.has-photo {
+  background-size: cover;
+  background-position: center;
+}
+.gallery-tile.has-photo::after {
+  content: none;
+}
 .tile-a { background: linear-gradient(140deg, #4a5940, #2b332a); }
 .tile-b { background: linear-gradient(140deg, #7a8b6f, #3f4a3a); }
 .tile-c { background: linear-gradient(140deg, #b9603e, #7a3f28); }
