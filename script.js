@@ -15,14 +15,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroVideo = document.querySelector(".hero-video");
   if (heroVideo) {
     const introEnd = 7;
-    heroVideo.addEventListener("loadedmetadata", () => {
-      heroVideo.currentTime = introEnd;
+    let revealed = false;
+
+    const seekPastIntro = () => {
+      if (heroVideo.currentTime < introEnd) {
+        heroVideo.currentTime = introEnd;
+      }
+    };
+
+    heroVideo.addEventListener("loadedmetadata", seekPastIntro);
+
+    heroVideo.addEventListener("seeked", () => {
+      heroVideo.play();
+      if (!revealed) {
+        revealed = true;
+        heroVideo.classList.add("is-ready");
+      }
     });
+
     heroVideo.addEventListener("timeupdate", () => {
       if (heroVideo.currentTime >= heroVideo.duration - 0.2) {
         heroVideo.currentTime = introEnd;
-        heroVideo.play();
       }
     });
+
+    // In case metadata is already available before listeners attach.
+    if (heroVideo.readyState >= 1) {
+      seekPastIntro();
+    }
   }
 });
