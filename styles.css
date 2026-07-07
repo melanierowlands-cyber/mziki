@@ -160,7 +160,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 64px;
-  align-items: start;
+  align-items: center;
 }
 .intro-copy p { font-size: 1.05rem; color: rgba(33,29,23,0.85); }
 .intro-stats {
