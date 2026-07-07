@@ -160,7 +160,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 64px;
-  align-items: center;
+  align-items: start;
 }
 .intro-copy p { font-size: 1.05rem; color: rgba(33,29,23,0.85); }
 .intro-stats {
@@ -176,6 +176,18 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 20px; }
 .stat-num { font-family: "Fraunces", serif; font-size: 2.1rem; color: var(--olive-deep); }
 .stat-num small { font-size: 1rem; font-weight: 500; margin-left: 2px; }
 .stat-label { font-size: 0.85rem; color: rgba(33,29,23,0.6); text-transform: uppercase; letter-spacing: 0.06em; }
+
+.home-living-copy { max-width: 720px; margin-top: 20px; }
+.home-living-copy p { font-size: 1.05rem; color: rgba(33,29,23,0.85); }
+.home-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.home-stats-row .stat { min-width: 140px; }
 
 /* Views & Wildlife */
 .views { background: var(--sand-deep); }
