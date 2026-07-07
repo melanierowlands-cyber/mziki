@@ -44,4 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
       seekPastIntro();
     }
   }
+
+  const gameDriveTile = document.querySelector(".game-drive-tile");
+  if (gameDriveTile) {
+    const photos = Array.from(gameDriveTile.querySelectorAll(".tile-photo"));
+    let current = 0;
+    setInterval(() => {
+      photos[current].classList.remove("is-active");
+      current = (current + 1) % photos.length;
+      photos[current].classList.add("is-active");
+    }, 3500);
+  }
 });
